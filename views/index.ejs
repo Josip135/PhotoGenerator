@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>PhotoGenerator</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto:wght@300;400;500&family=Ubuntu&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body>
+    <h1>Welcome to PhotoGenerator! A place made to promote photographers!</h1>
+  <div class="container">
+   <form id="myForm" method="post">
+     
+    <div>
+      <label for="OrientationInput">Orientation:</label>
+      <input type="text" id="OrientationInput" name="orientation">
+     </div>
+    
+     <div>
+      <label for="CountryInput">Country:</label>
+      <input type="text" id="CountryInput" name="country">
+     </div>
+  
+     <input id="get" type="submit" value="GENERATE" formaction="/get-photo">
+    
+    </form>
+  </div>
+  <div class="response-area">
+
+    <% if (urls && urls.regular) { %>
+      <img src="<%= urls.regular %>" alt="">
+      <p><%= description %></p>
+      <p><%= alt_description %></p>
+      <p class="sekundarni">Photo by <a href="<%= user.html_link %>"><%= user.name %></a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      <p class="sekundarni">Instagram: <%= user.instagram_username %> </p>
+    <% }  %>
+      
+    
+  </div>
+
+  </body>
+  <footer>
+    <p>Copyright by Josip</p>
+  </footer>
+</html>

@@ -1,0 +1,83 @@
+body {
+  min-height: 100vh;
+  background: rgb(211, 247, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h1,
+footer,
+label,
+p,
+input[type="submit"] {
+  font-family: Roboto;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  width: 600px;
+  background-color: azure;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+
+#CountryInput {
+  width: 72%;
+}
+
+#OrientationInput {
+  width: 68%;
+}
+
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(191, 255, 234);
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(107, 255, 255);
+}
+
+.response-area {
+  margin-top: 50px;
+}
+
+.sekundarni {
+  margin-top: -10px;
+  font-size: small;
+  text-align: center;
+}
